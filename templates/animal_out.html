@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        ANIMAL_IN
+    </title>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>ANIMAL_ID</th>
+                <th>ANIMAL_TYPE</th>
+                <th>DATETIME</th>
+                <th>NAME</th>
+                <th>SEX_UPON_OUTCOME</th>
+            </tr>
+            {% for row in results %}
+            <tr>
+                <td> {{ row['ANIMAL_ID'] }} </td>
+                <td> {{ row['ANIMAL_TYPE'] }} </td>
+                <td> {{ row['DATETIME']|string }} </td>
+                <td> {{ row['NAME'] }} </td>
+                <td> {{ row['SEX_UPON_OUTCOME'] }} </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>
