@@ -13,7 +13,6 @@ class AnimalIn(Resource):
         self.db.close()
         for r in self.rows:
             r['DATETIME'] = str(r['DATETIME'])
-        
         return self.rows
 
 class AnimalOut(Resource):
@@ -27,5 +26,4 @@ class AnimalOut(Resource):
         self.db.close()
         for r in self.rows:
             r['DATETIME'] = str(r['DATETIME'])
-        
         return self.rows
