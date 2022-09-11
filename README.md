@@ -46,7 +46,3 @@ python3 run.py
 ```bash
 curl -X GET http://localhost:5000/api/animal/in
 ```
-
-# 관련문서
-차근차근 한 단계씩 진행해보고 싶다면 아래의 링크 참조.  
-https://aciddust.github.io/blog/post/Python-Flask-RestAPI-MySQL/  
